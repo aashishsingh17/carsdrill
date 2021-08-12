@@ -14,7 +14,7 @@ module.exports = {
     problem5 : function(inventory,n)
     {
         if(inventory.length==0)
-        return [];
+        return 0;
           let temp=0;
         for(var i=0;i<inventory.length;i++)
          {
