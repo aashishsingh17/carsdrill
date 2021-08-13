@@ -18,4 +18,5 @@ function problem3(property) {
     }
 }
 
-module.exports.problem3=problem3;
+//module.exports.problem3=problem3;
+export{problem3};

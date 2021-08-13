@@ -3,6 +3,7 @@
 //import inventory from "./test/data";
 
 
+/*
 module.exports = {
     problem1 : function(inventory,n)
     {
@@ -13,23 +14,28 @@ module.exports = {
          {
             if(inventory[i].id==n)
             {
-                return ("Car 33 is a "+inventory[i].car_year+ " "+inventory[i].car_make+" "+ inventory[i].car_model);
+                return (inventory[i]);
             }
         }
     }
     }
 }
 
-/*
-export let problem1 = (inventory,n)=>
+ */
+function problem1 (inventory,n)
 {
+    if(inventory.length==0)
+    return [];
+    else{
     for(var i=0;i<inventory.length;i++)
          {
             if(inventory[i].id==n)
             {
-                return console.log("Car 33 is a "+inventory[i].car_year+ " "+inventory[i].car_make+" "+ inventory[i].car_model);
+                return (inventory[i]);
             }
         }
+    }
 }
+export {problem1};
 
-*/
+

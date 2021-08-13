@@ -7,14 +7,12 @@
 
 
 
-module.exports = {
-    problem2 : function(inventory)
+  function  problem2(inventory)
     {
         if(inventory.length==0)
         return [];
         else{
-         
-                return ("Last car is a "+inventory[inventory.length-1].car_make+ " "+ inventory[inventory.length-1].car_model);
+         return inventory[inventory.length-1];
         }
     }
-}
+    export{ problem2};
